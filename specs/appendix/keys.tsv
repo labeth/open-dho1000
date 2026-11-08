@@ -1,0 +1,53 @@
+code	id	hex	matrix_row	matrix_col	kind	panel_label	ug_item
+1	MEASURE	0x01	1	0	key	Measure	3
+2	TOUCH_LOCK	0x02	2	0	key	Touch Lock	6
+3	TRIGGER	0x03	3	0	key	Trigger (menu)	9
+4	CH1	0x04	4	0	key	1 (CH1)	10
+5	UNUSED_5	0x05	5	0	none	-	-
+6	CURSOR	0x06	6	0	key	Cursor	4
+7	SLOPE	0x07	7	0	key	Slope	9
+8	CH2	0x08	8	0	key	2 (CH2)	10
+9	MATH	0x09	9	0	key	Math	10
+16	DEFAULT	0x10	0	1	key	Default	7
+17	ANALYSE	0x11	1	1	key	Analyse	5
+18	FORCE	0x12	2	1	key	Force	9
+19	REF	0x13	3	1	key	Ref	10
+20	AUTO	0x14	4	1	key	Auto	7
+21	CH3	0x15	5	1	key	3 (CH3)	10
+22	CLEAR	0x16	6	1	key	Clear	7
+23	CH4	0x17	7	1	key	4 (CH4)	10
+24	SINGLE	0x18	8	1	key	Single	7
+25	UNUSED_25	0x19	9	1	none	-	-
+26	KNOB1_CW	0x1A	10	1	encoder-cw	Multipurpose knob 1	2
+27	KNOB1_CCW	0x1B	11	1	encoder-ccw	Multipurpose knob 1	2
+28	KNOB1_PUSH	0x1C	12	1	encoder-push	Multipurpose knob 1	2
+32	ZOOM	0x20	0	2	key	Zoom	11
+33	RUN_STOP	0x21	1	2	key	RUN/STOP	7
+34	QUICK	0x22	2	2	key	Quick	8
+35	ACQUIRE	0x23	3	2	key	Acquire	11
+36	UNUSED_36	0x24	4	2	none	-	-
+37	NAVIGATE	0x25	5	2	key	Navigate	11
+38	NAV_RIGHT	0x26	6	2	key	Navigation right (next)	11
+39	NAV_PLAY	0x27	7	2	key	Navigation middle (play/pause)	11
+40	NAV_LEFT	0x28	8	2	key	Navigation left (previous)	11
+41	UNUSED_41	0x29	9	2	none	-	-
+42	KNOB2_CW	0x2A	10	2	encoder-cw	Multipurpose knob 2	2
+43	KNOB2_CCW	0x2B	11	2	encoder-ccw	Multipurpose knob 2	2
+44	KNOB2_PUSH	0x2C	12	2	encoder-push	Multipurpose knob 2	2
+58	LEVEL_CW	0x3A	10	3	encoder-cw	Trigger LEVEL	9
+59	LEVEL_CCW	0x3B	11	3	encoder-ccw	Trigger LEVEL	9
+60	LEVEL_PUSH	0x3C	12	3	encoder-push	Trigger LEVEL	9
+74	HPOS_CW	0x4A	10	4	encoder-cw	Horizontal POSITION	11
+75	HPOS_CCW	0x4B	11	4	encoder-ccw	Horizontal POSITION	11
+76	HPOS_PUSH	0x4C	12	4	encoder-push	Horizontal POSITION	11
+90	VPOS_CW	0x5A	10	5	encoder-cw	Vertical POSITION	10
+91	VPOS_CCW	0x5B	11	5	encoder-ccw	Vertical POSITION	10
+92	VPOS_PUSH	0x5C	12	5	encoder-push	Vertical POSITION	10
+106	VSCALE_CW	0x6A	10	6	encoder-cw	Vertical SCALE	10
+107	VSCALE_CCW	0x6B	11	6	encoder-ccw	Vertical SCALE	10
+108	VSCALE_PUSH	0x6C	12	6	encoder-push	Vertical SCALE	10
+122	HSCALE_CW	0x7A	10	7	encoder-cw	Horizontal SCALE	11
+123	HSCALE_CCW	0x7B	11	7	encoder-ccw	Horizontal SCALE	11
+124	HSCALE_PUSH	0x7C	12	7	encoder-push	Horizontal SCALE	11
+170	POWER	0xAA	-	-	key	Power switch	15
+0	RELEASE	0x00	-	-	release	release (data 0x00)	-

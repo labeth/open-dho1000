@@ -1,0 +1,20 @@
+idx	name	group	bit	meaning
+0	CH1 yellow	2	3	CH1 displayed
+1	CH2 blue	2	4	CH2 displayed
+2	CH3 pink	2	5	CH3 displayed
+3	CH4 dark blue	2	6	CH4 displayed
+4	RUN green	2	7	running
+5	STOP red	3	0	stopped
+6	SINGLE red	3	1	single armed (lit together with idx 7)
+7	SINGLE orange	3	2	single armed (lit together with idx 6)
+8	not fitted	1	0	no LED on the DHO1000 panel
+9	not fitted	1	1	no LED on the DHO1000 panel
+10	not fitted	1	2	no LED on the DHO1000 panel
+11	Touch lock	1	3	touch locked
+12	Knob 1 up/down	1	4	knob 1 adjusts a vertical quantity
+13	Knob 2 left/right	1	5	knob 2 adjusts a horizontal quantity
+14	Slope 1 (rising)	1	6	rising (both 14+15 = either)
+15	Slope 2 (falling)	1	7	falling
+16	Knob 1 left/right	2	0	knob 1 adjusts a horizontal quantity
+17	Knob 2 up/down	2	1	knob 2 adjusts a vertical quantity
+18	Intensity	2	2	knob 1 adjusts waveform intensity

@@ -49,6 +49,26 @@ Start with [`specs/00-overview.md`](specs/00-overview.md).
 Contributions are written from the specifications; see the family's
 [provenance rules](https://github.com/labeth/open-dso/blob/main/docs/contributing.md).
 
+## A suggested shape for a first port
+
+The DHO1000 runs Android, which owns the display and the touchscreen. Rather than replacing it, a
+first port can keep Android and split the work:
+
+- **The firmware in Go, as a native arm64 process.** The board layer for the core's HAL, the engine,
+  decoders, measurements, SCPI and the web server all run outside Android's app framework, talking to
+  the FPGA over PCIe and to the front panel over its UART (spec 01, specs 02–05, spec 08). This is
+  the same code every open-dso scope runs.
+- **A thin Android app for the screen.** A full-screen WebView showing the firmware's own web UI from
+  `http://127.0.0.1`, so the 10.1-inch touchscreen shows the same interface a browser does. The app
+  holds no scope logic; Android handles touch.
+- **The vendor firmware stays installed.** Its home and scope apps are stopped while ours runs (spec 01
+  §7), and a reboot without our launch brings the unit back to the vendor software (spec 01 §10.7).
+
+Things to check early on a unit: whether the web UI's WebGL drawing is fast enough in a WebView on the
+RK3399's GPU, and whether the front-panel keys are read by the Go side directly (with the vendor apps
+stopped) or forwarded by the Android app. Drawing straight to the display without Android is possible
+later, but needs kernel and display work that this shape avoids.
+
 ## Licence
 
 MIT, see [LICENSE](LICENSE).
